@@ -1,6 +1,33 @@
+/*Apply styles after scroll*/
+.scrolling-active {
+  background-color: #fff !important;
+  padding-bottom: 0 !important;
+  padding-top: 0 !important;
+  box-shadow: 0 3px 1rem rgba(0, 0, 0, 0.1);
+  transition: 0.5s ease-out;
+}
+.scrolling-active .navbar-brand {
+  color: #313131 !important;
+  transition: 0.5s ease-out;
+}
+.dark,
+.dark i {
+  color: #000 !important;
+  border-color: #000 !important;
+  transition: 0.5s ease-out;
+}
+.scrolling-active.navbar-dark .navbar-nav .nav-link {
+  color: #313131 !important;
+  transition: 0.5s ease-out;
+}
+.bg-transparent {
+  transition: 0.5s ease-out;
+}
+
+/*Apply styles after scroll end*/
 /* ====================== Start Header ======================= */
 header {
-  background-image: url("../images/intro-bg.jpg");
+  background-image: url('../images/intro-bg.jpg');
   background-size: cover;
   background-position: center center;
   height: 100vh;
@@ -15,7 +42,6 @@ header .overlay {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.6);
 }
-
 header nav.navbar {
   z-index: 22;
 }
@@ -39,7 +65,7 @@ header nav.navbar {
 }
 
 .navbar-dark .navbar-nav .nav-link::after {
-  content: "";
+  content: '';
   position: absolute;
   width: 35px;
   height: 2px;
@@ -122,7 +148,7 @@ main {
 /* =================== Start Statics  ==================== */
 
 #statics {
-  background-image: url("../images/counters-bg.jpg");
+  background-image: url('../images/counters-bg.jpg');
   background-position: center center;
   background-size: cover;
   background-attachment: fixed;
@@ -172,7 +198,7 @@ main {
 
 /* =================== Start Work  ==================== */
 #work {
-  background-image: url("../images/overlay-bg.jpg");
+  background-image: url('../images/overlay-bg.jpg');
   background-size: cover;
   background-position: center center;
   background-attachment: fixed;
@@ -201,8 +227,6 @@ main {
 }
 /* =================== End Work  ==================== */
 
-
-
 /* =================== Start Blog  ==================== */
 .blog .intro h2 {
   font-size: 3rem;
@@ -229,7 +253,7 @@ main {
 
 /* =================== Start Contact  ==================== */
 #contact {
-  background-image: url("../images/overlay-bg.jpg");
+  background-image: url('../images/overlay-bg.jpg');
   background-size: cover;
   background-position: center center;
   background-attachment: fixed;
@@ -244,7 +268,7 @@ main {
 .contact input {
   padding: 20px 15px;
 }
-.contact button[type="submit"] {
+.contact button[type='submit'] {
   background-color: #0078ff;
   border: 0;
   padding: 10px 24px;
@@ -252,7 +276,7 @@ main {
   transition: all 0.4s ease-in-out;
   border-radius: 3rem;
 }
-.contact button[type="submit"]:hover {
+.contact button[type='submit']:hover {
   background-color: #3393ff;
   box-shadow: 0 0 0 4px #cde1f8;
 }
@@ -271,7 +295,7 @@ main {
 }
 .contact .social-media span:hover {
   color: #fff;
-  background-color: #0062D3;
+  background-color: #0062d3;
   box-shadow: 0 0 0 3px #cde1f8;
 }
 .contact .get-in-touch .fa-ul li i {
@@ -281,13 +305,13 @@ main {
 
 /* =================== Start Footer  ==================== */
 footer {
-  background-color: #0062D3;
+  background-color: #0062d3;
 }
 /* =================== End Footer  ==================== */
 
 /* =============== base ================= */
 .my-left-line::after {
-  content: "";
+  content: '';
   position: absolute;
   height: 3px;
   background-color: #0078ff;
@@ -297,7 +321,7 @@ footer {
 }
 
 .my-center-line::after {
-  content: "";
+  content: '';
   position: absolute;
   height: 5px;
   background-color: #0078ff;
@@ -306,7 +330,6 @@ footer {
   left: 50%;
   transform: translate(-50%, 0%);
 }
-
 
 /* Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
@@ -353,5 +376,3 @@ footer {
     width: 100% !important;
   }
 }
-
-
